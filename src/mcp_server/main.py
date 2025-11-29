@@ -320,10 +320,11 @@ def run_server():
     
     # Run the FastAPI server with uvicorn
     uvicorn.run(
-        app,
+        "mcp_server.main:app",  # Import string for reload support
         host=config.host,
         port=config.port,
-        log_level="info"
+        log_level="info",
+        reload=True  # Enable auto-reload for development
     )
 
 

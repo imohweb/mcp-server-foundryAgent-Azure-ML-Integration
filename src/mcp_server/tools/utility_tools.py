@@ -18,8 +18,7 @@ def greet(name: str) -> str:
     Returns:
         A personalized greeting message
     """
-    return f"Hello, {name}! Welcome to the MCP Foundry ML integration."
-
+    return f"Hello, {name}! Welcome to the MCP Foundry ML integration session by Imoh Etuk. Enjoy exploring the capabilities of the MCP server!"
 
 def add_numbers(a: float, b: float) -> Dict[str, Any]:
     """
