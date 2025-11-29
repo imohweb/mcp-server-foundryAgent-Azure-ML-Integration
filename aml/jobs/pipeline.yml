@@ -1,0 +1,17 @@
+$schema: https://azuremlschemas.azureedge.net/latest/pipelineJob.schema.json
+type: pipeline
+description: Simple MCP → Azure ML pipeline demo
+
+display_name: mcp_foundry_demo_pipeline
+experiment_name: mcp-foundry-demo
+
+jobs:
+  process_data:
+    type: command
+    command: >-
+      echo "MCP Foundry ML Pipeline Started" &&
+      echo "Processing data from MCP Server" &&
+      python -c "import json, sys; print('Pipeline Status: Success'); print('Executed via MCP Foundry Bridge'); sys.exit(0)"
+    environment:
+      image: mcr.microsoft.com/azureml/openmpi4.1.0-ubuntu20.04:latest
+    compute: azureml:mcp-compute

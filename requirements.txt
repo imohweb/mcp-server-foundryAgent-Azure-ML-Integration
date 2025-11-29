@@ -1,0 +1,17 @@
+# MCP Server Dependencies
+mcp>=1.0.0
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.5.0
+python-dotenv>=1.0.0
+
+# Azure Dependencies
+azure-ai-ml>=1.13.0
+azure-identity>=1.15.0
+azure-ai-projects>=1.0.0b1
+azure-core>=1.29.0
+
+# Utilities
+pyyaml>=6.0.1
+httpx>=0.25.0
+aiofiles>=23.2.1
